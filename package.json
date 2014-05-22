@@ -1,0 +1,36 @@
+{
+  "name": "hexo-migrator-dropbox",
+  "version": "0.0.1",
+  "description": "Store your hexo posts on Dropbox space.",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kywk/hexo-migrator-dropbox.git"
+  },
+  "keywords": [
+    "hexo",
+    "hexi",
+    "dropbox"
+  ],
+  "author": {
+    "name": "Moo Cow",
+    "email": "kywk.id@gmail.com"
+  },
+  "engines": {
+    "hexo": "*"
+  },
+  "dependencies": {
+    "dbox": "*"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://raw.github.com/kywk/hexo-tag-eval/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/kywk/hexo-migrator-dropbox/issues"
+  },
+  "homepage": "https://github.com/kywk/hexo-migrator-dropbox"
+}
