@@ -1,0 +1,88 @@
+/* Base */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f9f7eb;
+  width: 100%;
+  padding-top: 30px;
+}
+
+
+/* Common */
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 940px;
+}
+
+h2, h3, h4 {
+  line-height: 1.5em;
+  margin: 0 0 .5em 0;
+}
+
+.navbar-default {
+  z-index: 10;
+  padding: 10px 0;
+  background: #fff;
+  border-bottom: 1px #008 solid;
+}
+
+.nav {
+  margin: 5px 0;
+}
+
+
+/* */
+.oauth-wrapper {
+  display: block;
+  border-bottom: 1px block solid;
+  overflow: hidden;
+  margin-top: -20px;
+}
+.oauth-frame {
+  width: 100%;
+  height: 600px;
+  margin: -90px 0 0 0;
+  border: none;
+}
+
+
+/* simple block */
+.simple-block {
+  padding: 100px 0 50px;
+  color: #7f8c8d;
+}
+
+.simple-block h1 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 51px;
+  margin: 0 0 73px 0;
+  letter-spacing: -0.05em;
+}
+
+.simple-block p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 35px;
+  margin: 0 0 35px 0;
+}
+
+.drak-block {
+  background: #59572b;
+  color: #f9f7eb;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+
+.contact {
+  padding: 20px 0;
+  background: #29271b;
+  color: #f9f7eb;
+}
+
+p + code, p + pre {
+  margin: -25px 0 0 0 ;
+}

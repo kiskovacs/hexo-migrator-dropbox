@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hexo Dropbox migrator</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <a class="navbar-brand" href="#">Hexo Dropbox migrator</a>
+    <ul class="nav nav-pills pull-right">
+      <li><a href="#oauth">Authorize</a></li>
+      <li><a href="#how_tos">How-to</a></li>
+      <li><a href="#comment">Coment</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="simple-block drak-block hero">
+  <div class="container">
+    <div class="row"><div class="col-md-10 col-md-offset-1">
+      <p>Hexo Dropbox migrator is a Hexo/Hexi plugins for migrating posts from Dropbox.</p>
+      <p>You can setup a hexo blogging system on any remote host you own, use your favorite markdown editor to write blog posts, save to Dropbox space. Then use this plugin to migrate the posts from Dropbox to your remote host.</p>
+      <p>You should grant hexo-migrator-dropbox access to your Dropbox to use this plugin.</p>
+    </div></div>
+  </div>
+</section>
+
+<div class="oauth-wrapper"><a name="oauth"></a>
+  <iframe class="oauth-frame" src="http://mocdb.herokuapp.com/hexo-dbox" scrolling="none"></iframe>
+</div>
+
+<section class="simple-block">
+  <div class="container"><a name="how_tos"></a>
+    <div class="row"><div class="col-md-10 col-md-offset-1">
+      <h1>How to use this plugin</h1>
+
+      <h3>1. Install plugins</h3>
+      <p>
+        Install hexo-migrator-dropbox at your hexo blog folder. <br/>
+        <code>$ npm install git+https://github.com/kywk/hexo-migrator-dropbox.git --save </code>
+      </p>
+
+      <h3>2. Get your dropbox access token</h3>
+      <p>
+        Finish steps in pervious block to get your access token. The token should looks like:
+        <pre>
+dropbox_migrator:
+  app_key: skv92l3fnhakone
+  app_secret: mu30g4zvjl82l083n
+  oauth_token_secret: 32h9zvi39kdml9s
+  oauth_token: jh8ykhos3hml9s0
+  userid: 1234567
+  source_dir: /Apps/Hexo-migrator </pre>
+      </p>
+
+      <h3>3. Modify hexo _config.yml</h3>
+      <p>
+        Copy your dropbox access token to your hexo <code>_config.yml</code>.<br />
+        Change <code>source_dir</code> to your Dropbox path of blog posts.
+      </p>
+
+      <h3>4. Import posts from Dropbox</h3>
+      <p>
+        Use following command to import posts from Dropbox to your Hexo blog system.
+        <code>$ hexo migrate dropbox</code>
+      </p>
+
+      <h3>5. Done, Happy blogging</h3>
+      <p>After the migrator downloads all posts, it's ready to generate and deploy your blog.</p>
+    </div></div>
+  </div>
+</section>
+
+<section class="simple-block drak-block">
+  <div class="container"><a name="comment"></a>
+    <div class="row"><div class="col-md-10 col-md-offset-1">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+
+<section class="simple-block contact">
+  <div class="container">
+    <div class="row"><div class="col-md-10 col-md-offset-1">
+      <h5></h5>
+    </div></div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  var disqus_shortname = 'moco';
+
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+</body>
+</html>
