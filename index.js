@@ -11,7 +11,7 @@ var dbox_client;
 var DBM_MSGS = {
   "WRONG_KEY": "Your dropbox_migrator setting seems wrong, Please check _config.yml.",
   "EXPIRED_KEY": "Your dropbox access token had expired.",
-  "GET_KEYS": "Please visit URL to get your oauth token keys."
+  "GET_KEYS": "Please visit http://goo.gl/fvTIIq to get your oauth token keys."
 }
 
 var isEndWith = function(str, last){
