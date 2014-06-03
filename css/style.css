@@ -76,13 +76,34 @@ h2, h3, h4 {
   font-size: 20px;
 }
 
-
-.contact {
-  padding: 20px 0;
-  background: #29271b;
-  color: #f9f7eb;
-}
-
 p + code, p + pre {
   margin: -25px 0 0 0 ;
+}
+
+
+/* footer */
+.contact {
+  padding: 50px 0 30px;
+  background: #29271b;
+  color: #c9c7bb;
+}
+
+.contact p {
+  font-size: 1em;
+  margin: -15px 0 0 0;
+}
+
+.contact a:link, .contact a:visited, .contact a:hover  {
+  color: #c9c7bb;
+}
+
+.contact .fa-stack {
+  margin: 20px 0 0 0;
+}
+
+.contact .figure {
+  width: 48px;
+  height: 48px;
+  border-radius: 72px;
+  border: 5px solid #f9f7eb;
 }
