@@ -23,7 +23,8 @@
     "hexo": "*"
   },
   "dependencies": {
-    "dbox": "*"
+    "dbox": "*",
+    "hexo-fs": "^0.1.5"
   },
   "license": {
     "type": "MIT",
